@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIContainerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-K8-nE9">
+                                <rect key="frame" x="20" y="20" width="283" height="748"/>
+                                <connections>
+                                    <segue destination="DxH-v8-nca" kind="embed" id="WdV-ay-iHC"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dyd-Bc-G8D">
+                                <rect key="frame" x="344" y="20" width="660" height="425"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-wl-rsS">
+                                <rect key="frame" x="344" y="520" width="660" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Dq4-7c-L30"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="660" id="ni0-KY-Cd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCd-wl-rsS" secondAttribute="trailing" constant="20" id="2GM-by-hYl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MCd-wl-rsS" secondAttribute="bottom" constant="173" id="DUz-LZ-0Zt"/>
+                            <constraint firstItem="nsV-K8-nE9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LaU-eZ-Fz8"/>
+                            <constraint firstItem="nsV-K8-nE9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P3K-3E-iUR"/>
+                            <constraint firstItem="dyd-Bc-G8D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ToI-k6-gW8"/>
+                            <constraint firstItem="dyd-Bc-G8D" firstAttribute="leading" secondItem="nsV-K8-nE9" secondAttribute="trailing" constant="41" id="cBy-ng-eQx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nsV-K8-nE9" secondAttribute="bottom" id="iXT-jc-4BV"/>
+                            <constraint firstItem="dyd-Bc-G8D" firstAttribute="leading" secondItem="MCd-wl-rsS" secondAttribute="leading" id="wZY-1R-lvb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dyd-Bc-G8D" secondAttribute="trailing" constant="20" id="xV5-3f-gNq"/>
+                            <constraint firstItem="MCd-wl-rsS" firstAttribute="top" secondItem="dyd-Bc-G8D" secondAttribute="bottom" constant="75" id="yhh-nX-Q5a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageCover" destination="dyd-Bc-G8D" id="5Af-BO-ZrQ"/>
+                        <outlet property="titleLabel" destination="MCd-wl-rsS" id="WE4-lv-KE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6.4453125" y="-13.28125"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="JVF-0k-XE9">
+            <objects>
+                <tableViewController id="DxH-v8-nca" customClass="DetailViewController" customModule="UIContainerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y77-zZ-GPo">
+                        <rect key="frame" x="0.0" y="0.0" width="283" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Title" id="9Lj-ru-SOS">
+                                <rect key="frame" x="0.0" y="28" width="283" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Lj-ru-SOS" id="y78-Q4-5ER">
+                                    <rect key="frame" x="0.0" y="0.0" width="283" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DxH-v8-nca" id="ZYJ-yD-46w"/>
+                            <outlet property="delegate" destination="DxH-v8-nca" id="EBX-At-ozl"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDW-9B-ibk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="-13"/>
+        </scene>
+    </scenes>
+</document>
