@@ -12,6 +12,8 @@
 		222283F322AC386300D48E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222283F222AC386300D48E0F /* Assets.xcassets */; };
 		222283F622AC386300D48E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222283F422AC386300D48E0F /* LaunchScreen.storyboard */; };
 		222283FE22AC3D3200D48E0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222283FD22AC3D3200D48E0F /* MainViewController.swift */; };
+		2222840022AD73C300D48E0F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222283FF22AD73C300D48E0F /* CustomTableViewCell.swift */; };
+		2222840222AD77AE00D48E0F /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222840122AD77AE00D48E0F /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		222283F522AC386300D48E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		222283F722AC386300D48E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222283FD22AC3D3200D48E0F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		222283FF22AD73C300D48E0F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		2222840122AD77AE00D48E0F /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				222283F422AC386300D48E0F /* LaunchScreen.storyboard */,
 				222283F722AC386300D48E0F /* Info.plist */,
 				222283FD22AC3D3200D48E0F /* MainViewController.swift */,
+				222283FF22AD73C300D48E0F /* CustomTableViewCell.swift */,
+				2222840122AD77AE00D48E0F /* PlaceModel.swift */,
 			);
 			path = BestPlaces;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2222840022AD73C300D48E0F /* CustomTableViewCell.swift in Sources */,
+				2222840222AD77AE00D48E0F /* PlaceModel.swift in Sources */,
 				222283EC22AC386200D48E0F /* AppDelegate.swift in Sources */,
 				222283FE22AC3D3200D48E0F /* MainViewController.swift in Sources */,
 			);
