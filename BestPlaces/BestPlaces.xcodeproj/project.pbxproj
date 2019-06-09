@@ -14,6 +14,7 @@
 		222283FE22AC3D3200D48E0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222283FD22AC3D3200D48E0F /* MainViewController.swift */; };
 		2222840022AD73C300D48E0F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222283FF22AD73C300D48E0F /* CustomTableViewCell.swift */; };
 		2222840222AD77AE00D48E0F /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222840122AD77AE00D48E0F /* PlaceModel.swift */; };
+		2222840422AD85D300D48E0F /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222840322AD85D300D48E0F /* NewPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		222283FD22AC3D3200D48E0F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		222283FF22AD73C300D48E0F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2222840122AD77AE00D48E0F /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		2222840322AD85D300D48E0F /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				222283FD22AC3D3200D48E0F /* MainViewController.swift */,
 				222283FF22AD73C300D48E0F /* CustomTableViewCell.swift */,
 				2222840122AD77AE00D48E0F /* PlaceModel.swift */,
+				2222840322AD85D300D48E0F /* NewPlaceViewController.swift */,
 			);
 			path = BestPlaces;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				2222840022AD73C300D48E0F /* CustomTableViewCell.swift in Sources */,
 				2222840222AD77AE00D48E0F /* PlaceModel.swift in Sources */,
+				2222840422AD85D300D48E0F /* NewPlaceViewController.swift in Sources */,
 				222283EC22AC386200D48E0F /* AppDelegate.swift in Sources */,
 				222283FE22AC3D3200D48E0F /* MainViewController.swift in Sources */,
 			);
