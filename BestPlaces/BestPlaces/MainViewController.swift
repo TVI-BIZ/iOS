@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class MainViewController: UITableViewController {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 //    let restaurantNames = [
 //        "Burger Heroes", "Kitchen", "Bonsai", "EastFood",
@@ -18,6 +18,7 @@ class MainViewController: UITableViewController {
 //        "Classic", "Love&Life", "ShockFood", "BarrelBar"
 //    ]
     
+    @IBOutlet weak var tableView: UITableView!
     var places: Results<Place>!
     
     
@@ -31,12 +32,12 @@ class MainViewController: UITableViewController {
     // MARK: - Table view data source
 
   
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.isEmpty ? 0 : places.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
 
         let place = places[indexPath.row]
@@ -54,7 +55,7 @@ class MainViewController: UITableViewController {
 
         return cell
     }
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let place = places[indexPath.row]
         let deleteAction = UITableViewRowAction(style: .default, title: "Delete") { (_, _) in
             StorageManager.deleteObject(place)
@@ -64,15 +65,21 @@ class MainViewController: UITableViewController {
     }
     
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //:MARK: - Navigation
+
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetail" {
+            guard let indexPath = tableView.indexPathForSelectedRow else {
+                return
+            }
+            let place = places[indexPath.row]
+            let newPlaceVC = segue.destination as! NewPlaceViewController
+            newPlaceVC.currentPlace = place
+        }
     }
-    */
+
     
     @IBAction func unwindSegue (_ segue: UIStoryboardSegue) {
         guard let newPlaceVC = segue.source as? NewPlaceViewController else {return}
