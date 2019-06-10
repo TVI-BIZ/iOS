@@ -30,6 +30,7 @@ class NewPlaceViewController: UITableViewController {
         placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         setupEditScreen()
         
+        
     }
     // MARK: Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

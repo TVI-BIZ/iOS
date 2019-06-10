@@ -37,7 +37,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38c-Iy-RwX">
-                                                    <rect key="frame" x="95" y="9" width="264" height="21"/>
+                                                    <rect key="frame" x="95" y="9" width="174" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="3FK-dY-HfO"/>
                                                     </constraints>
@@ -46,7 +46,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-t6-Zmd">
-                                                    <rect key="frame" x="95" y="35" width="264" height="18"/>
+                                                    <rect key="frame" x="95" y="35" width="174" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="1wx-aW-WTu"/>
                                                     </constraints>
@@ -55,7 +55,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcA-zm-7cb">
-                                                    <rect key="frame" x="95" y="54" width="264" height="21"/>
+                                                    <rect key="frame" x="95" y="54" width="174" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="vMc-dC-VVK"/>
                                                     </constraints>
@@ -63,24 +63,41 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="25" translatesAutoresizingMaskIntoConstraints="NO" id="v7l-IZ-5WA" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="277" y="30" width="90" height="25"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="ica-Gd-jjO"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="filledStar"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="emptyStar"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="38c-Iy-RwX" firstAttribute="top" secondItem="gtV-bt-DDw" secondAttribute="top" constant="9" id="2sx-Lz-KHN"/>
                                                 <constraint firstItem="38c-Iy-RwX" firstAttribute="leading" secondItem="IVb-sc-3Y8" secondAttribute="trailing" constant="15" id="3eq-ce-f8v"/>
+                                                <constraint firstItem="v7l-IZ-5WA" firstAttribute="leading" secondItem="j3d-t6-Zmd" secondAttribute="trailing" constant="8" id="3sC-Bd-vgr"/>
                                                 <constraint firstAttribute="bottom" secondItem="IcA-zm-7cb" secondAttribute="bottom" constant="9.5" id="9dq-Yx-uA9"/>
                                                 <constraint firstItem="j3d-t6-Zmd" firstAttribute="top" secondItem="38c-Iy-RwX" secondAttribute="bottom" constant="5" id="AK6-hv-D6c"/>
+                                                <constraint firstItem="IcA-zm-7cb" firstAttribute="width" secondItem="38c-Iy-RwX" secondAttribute="width" id="Atf-wh-qUA"/>
                                                 <constraint firstItem="IVb-sc-3Y8" firstAttribute="bottom" secondItem="IcA-zm-7cb" secondAttribute="bottom" id="J90-sb-pPR"/>
                                                 <constraint firstItem="IVb-sc-3Y8" firstAttribute="leading" secondItem="gtV-bt-DDw" secondAttribute="leading" constant="15" id="MZg-MO-dpj"/>
-                                                <constraint firstAttribute="trailing" secondItem="38c-Iy-RwX" secondAttribute="trailing" constant="16" id="WCo-eG-1s2"/>
                                                 <constraint firstItem="j3d-t6-Zmd" firstAttribute="leading" secondItem="IVb-sc-3Y8" secondAttribute="trailing" constant="15" id="YTd-O2-u5s"/>
                                                 <constraint firstItem="IVb-sc-3Y8" firstAttribute="centerY" secondItem="gtV-bt-DDw" secondAttribute="centerY" id="YfU-8a-C9K"/>
+                                                <constraint firstItem="j3d-t6-Zmd" firstAttribute="width" secondItem="38c-Iy-RwX" secondAttribute="width" id="a3r-hx-Uee"/>
                                                 <constraint firstItem="IcA-zm-7cb" firstAttribute="top" secondItem="j3d-t6-Zmd" secondAttribute="bottom" constant="1" id="aJF-Kj-lMT"/>
-                                                <constraint firstAttribute="trailing" secondItem="IcA-zm-7cb" secondAttribute="trailing" constant="16" id="rEC-Q2-Odp"/>
+                                                <constraint firstItem="v7l-IZ-5WA" firstAttribute="centerY" secondItem="j3d-t6-Zmd" secondAttribute="centerY" constant="-1.4999999999999929" id="bvS-w8-lKE"/>
+                                                <constraint firstAttribute="trailing" secondItem="v7l-IZ-5WA" secondAttribute="trailing" constant="8" id="pLr-BN-QJa"/>
                                                 <constraint firstItem="IcA-zm-7cb" firstAttribute="leading" secondItem="IVb-sc-3Y8" secondAttribute="trailing" constant="15" id="rsI-Fv-zSt"/>
-                                                <constraint firstAttribute="trailing" secondItem="j3d-t6-Zmd" secondAttribute="trailing" constant="16" id="x4s-pR-LY5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cosmosView" destination="v7l-IZ-5WA" id="lR3-24-KKC"/>
                                             <outlet property="imageOfPlace" destination="IVb-sc-3Y8" id="NLl-fH-iea"/>
                                             <outlet property="locationLabel" destination="j3d-t6-Zmd" id="KwA-eD-0bu"/>
                                             <outlet property="nameLabel" destination="38c-Iy-RwX" id="lbD-AP-DiH"/>
@@ -376,6 +393,8 @@
     <resources>
         <image name="AZ" width="25" height="24"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
+        <image name="emptyStar" width="255" height="256"/>
+        <image name="filledStar" width="237.5" height="238"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4M0-Z7-NTM"/>
