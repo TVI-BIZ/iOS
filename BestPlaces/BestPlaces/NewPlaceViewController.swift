@@ -17,17 +17,13 @@ class NewPlaceViewController: UITableViewController {
     @IBOutlet weak var placeType: UITextField!
     @IBOutlet weak var placeLocation: UITextField!
     
-    var newPlace = Place()
+    
     var imageIsChanged = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.async {
-            self.newPlace.savePlaces()
-        }
-        
-        //newPlace.savePlaces()
+
         
         tableView.tableFooterView = UIView()
         
@@ -73,6 +69,8 @@ class NewPlaceViewController: UITableViewController {
         }
     }
     func saveNewPlace(){
+        
+        
         var image: UIImage?
         
         if imageIsChanged{
@@ -80,8 +78,13 @@ class NewPlaceViewController: UITableViewController {
         } else {
             image = #imageLiteral(resourceName: "imagePlaceholder")
         }
+        let imageData = image?.pngData()
         
-//        newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, restaurantImage: nil, image: image)
+        let newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, imageData: imageData)
+        
+        StorageManager.saveObject(newPlace)
+        
+        
     }
 
     @IBAction func cancellAction(_ sender: Any) {
