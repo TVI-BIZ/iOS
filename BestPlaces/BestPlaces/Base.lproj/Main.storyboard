@@ -178,9 +178,22 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="mMn-cC-jON">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="249.66666666666666"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tff-nO-3av">
+                                                    <rect key="frame" x="325" y="199.66666666666666" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="67s-OB-zWX"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Rue-Sy-UMo"/>
+                                                    </constraints>
+                                                    <state key="normal" image="map"/>
+                                                    <connections>
+                                                        <segue destination="3Yz-Yb-hGC" kind="presentation" identifier="showMap" id="Bhj-Gs-9d9"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tff-nO-3av" secondAttribute="trailing" id="2Dj-Gm-pLn"/>
+                                                <constraint firstAttribute="bottom" secondItem="tff-nO-3av" secondAttribute="bottom" id="Blt-yk-2jh"/>
                                                 <constraint firstAttribute="trailing" secondItem="mMn-cC-jON" secondAttribute="trailing" id="HKC-AK-OMO"/>
                                                 <constraint firstAttribute="bottom" secondItem="mMn-cC-jON" secondAttribute="bottom" id="QLh-Ea-aGD"/>
                                                 <constraint firstItem="mMn-cC-jON" firstAttribute="top" secondItem="T0r-UB-V3M" secondAttribute="top" id="g7K-kq-wZ6"/>
@@ -350,7 +363,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICw-bJ-WeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="liZ-9g-9ZN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2143.1999999999998" y="32.833583208395808"/>
+            <point key="canvasLocation" x="2143.1999999999998" y="32.512315270935964"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="FFb-1c-PDX">
+            <objects>
+                <viewController id="3Yz-Yb-hGC" customClass="MapViewController" customModule="BestPlaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Lp-2t-Bhi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-CR-lwY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4z-gd-fZZ">
+                                <rect key="frame" x="305" y="84" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KHo-bE-KkJ"/>
+                                    <constraint firstAttribute="width" constant="30" id="ccz-kH-2TI"/>
+                                </constraints>
+                                <state key="normal" image="camcel"/>
+                                <connections>
+                                    <action selector="closeVC" destination="3Yz-Yb-hGC" eventType="touchUpInside" id="gep-NW-kCi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DGh-Kl-aqz" firstAttribute="trailing" secondItem="V4z-gd-fZZ" secondAttribute="trailing" constant="40" id="VEu-zw-ufI"/>
+                            <constraint firstItem="V4z-gd-fZZ" firstAttribute="top" secondItem="DGh-Kl-aqz" secondAttribute="top" constant="40" id="Viy-Dh-5zi"/>
+                            <constraint firstItem="kvc-CR-lwY" firstAttribute="trailing" secondItem="DGh-Kl-aqz" secondAttribute="trailing" id="dGi-rC-42I"/>
+                            <constraint firstAttribute="bottom" secondItem="kvc-CR-lwY" secondAttribute="bottom" id="diy-9U-r2U"/>
+                            <constraint firstItem="kvc-CR-lwY" firstAttribute="top" secondItem="3Lp-2t-Bhi" secondAttribute="top" id="g3v-Ml-eti"/>
+                            <constraint firstItem="kvc-CR-lwY" firstAttribute="leading" secondItem="DGh-Kl-aqz" secondAttribute="leading" id="rea-LA-vMu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DGh-Kl-aqz"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="kvc-CR-lwY" id="oEz-D3-pd9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S47-Pu-ZD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3248.8000000000002" y="39.90147783251232"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dff-ID-Fxc">
@@ -393,8 +448,10 @@
     <resources>
         <image name="AZ" width="25" height="24"/>
         <image name="Photo" width="194.66667175292969" height="195.66667175292969"/>
+        <image name="camcel" width="307.20001220703125" height="307.20001220703125"/>
         <image name="emptyStar" width="255" height="256"/>
         <image name="filledStar" width="237.5" height="238"/>
+        <image name="map" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4M0-Z7-NTM"/>
