@@ -11,12 +11,7 @@ import RealmSwift
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-//    let restaurantNames = [
-//        "Burger Heroes", "Kitchen", "Bonsai", "EastFood",
-//        "ChinaFood", "X.O", "Grill Bar", "Sherlock Holmes",
-//        "Speak Easy", "Morris Pub", "Tasty Story",
-//        "Classic", "Love&Life", "ShockFood", "BarrelBar"
-//    ]
+
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
@@ -69,12 +64,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let place = isFiltering ? filteredPlaces[indexPath.row] : places[indexPath.row]
         
-//        if isFiltering {
-//            place = filteredPlaces[indexPath.row]
-//        } else {
-//            place = places[indexPath.row]
-//        }
-        //let place = places[indexPath.row]
+
 
         cell.nameLabel.text = place.name
         cell.locationLabel.text = place.location
