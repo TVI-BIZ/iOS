@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2244968122B944DA00C76338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244968022B944DA00C76338 /* AppDelegate.swift */; };
+		2244968722B944DA00C76338 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244968622B944DA00C76338 /* GameScene.swift */; };
+		2244968922B944DA00C76338 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244968822B944DA00C76338 /* GameViewController.swift */; };
+		2244968C22B944DA00C76338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244968A22B944DA00C76338 /* Main.storyboard */; };
+		2244968E22B944DB00C76338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2244968D22B944DB00C76338 /* Assets.xcassets */; };
+		2244969122B944DB00C76338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244968F22B944DB00C76338 /* LaunchScreen.storyboard */; };
+		2244969922B94DD500C76338 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244969822B94DD500C76338 /* Background.swift */; };
+		2244969B22B950D300C76338 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244969A22B950D300C76338 /* Island.swift */; };
+		2244969D22B9686C00C76338 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244969C22B9686C00C76338 /* Cloud.swift */; };
+		2244969F22BA13B000C76338 /* PlayerPlain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244969E22BA13AF00C76338 /* PlayerPlain.swift */; };
+		224496A122BA148500C76338 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 224496A022BA148500C76338 /* PlayerPlane.atlas */; };
+		224496A322BAE6F400C76338 /* GameBackgroundSpritable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224496A222BAE6F400C76338 /* GameBackgroundSpritable+Protocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2244967D22B944DA00C76338 /* FlyWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2244968022B944DA00C76338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2244968622B944DA00C76338 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2244968822B944DA00C76338 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2244968B22B944DA00C76338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2244968D22B944DB00C76338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2244969022B944DB00C76338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2244969222B944DB00C76338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2244969822B94DD500C76338 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		2244969A22B950D300C76338 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		2244969C22B9686C00C76338 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		2244969E22BA13AF00C76338 /* PlayerPlain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlain.swift; sourceTree = "<group>"; };
+		224496A022BA148500C76338 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		224496A222BAE6F400C76338 /* GameBackgroundSpritable+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameBackgroundSpritable+Protocol.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2244967A22B944DA00C76338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2244967422B944DA00C76338 = {
+			isa = PBXGroup;
+			children = (
+				2244967F22B944DA00C76338 /* FlyWar */,
+				2244967E22B944DA00C76338 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2244967E22B944DA00C76338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2244967D22B944DA00C76338 /* FlyWar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2244967F22B944DA00C76338 /* FlyWar */ = {
+			isa = PBXGroup;
+			children = (
+				2244968022B944DA00C76338 /* AppDelegate.swift */,
+				2244968622B944DA00C76338 /* GameScene.swift */,
+				2244968822B944DA00C76338 /* GameViewController.swift */,
+				2244968A22B944DA00C76338 /* Main.storyboard */,
+				2244968D22B944DB00C76338 /* Assets.xcassets */,
+				2244968F22B944DB00C76338 /* LaunchScreen.storyboard */,
+				2244969222B944DB00C76338 /* Info.plist */,
+				2244969822B94DD500C76338 /* Background.swift */,
+				2244969A22B950D300C76338 /* Island.swift */,
+				2244969C22B9686C00C76338 /* Cloud.swift */,
+				2244969E22BA13AF00C76338 /* PlayerPlain.swift */,
+				224496A022BA148500C76338 /* PlayerPlane.atlas */,
+				224496A222BAE6F400C76338 /* GameBackgroundSpritable+Protocol.swift */,
+			);
+			path = FlyWar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2244967C22B944DA00C76338 /* FlyWar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2244969522B944DB00C76338 /* Build configuration list for PBXNativeTarget "FlyWar" */;
+			buildPhases = (
+				2244967922B944DA00C76338 /* Sources */,
+				2244967A22B944DA00C76338 /* Frameworks */,
+				2244967B22B944DA00C76338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyWar;
+			productName = FlyWar;
+			productReference = 2244967D22B944DA00C76338 /* FlyWar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2244967522B944DA00C76338 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "TVI Software";
+				TargetAttributes = {
+					2244967C22B944DA00C76338 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2244967822B944DA00C76338 /* Build configuration list for PBXProject "FlyWar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2244967422B944DA00C76338;
+			productRefGroup = 2244967E22B944DA00C76338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2244967C22B944DA00C76338 /* FlyWar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2244967B22B944DA00C76338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2244968C22B944DA00C76338 /* Main.storyboard in Resources */,
+				224496A122BA148500C76338 /* PlayerPlane.atlas in Resources */,
+				2244968E22B944DB00C76338 /* Assets.xcassets in Resources */,
+				2244969122B944DB00C76338 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2244967922B944DA00C76338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2244969F22BA13B000C76338 /* PlayerPlain.swift in Sources */,
+				2244968722B944DA00C76338 /* GameScene.swift in Sources */,
+				2244969D22B9686C00C76338 /* Cloud.swift in Sources */,
+				2244968922B944DA00C76338 /* GameViewController.swift in Sources */,
+				2244968122B944DA00C76338 /* AppDelegate.swift in Sources */,
+				2244969B22B950D300C76338 /* Island.swift in Sources */,
+				224496A322BAE6F400C76338 /* GameBackgroundSpritable+Protocol.swift in Sources */,
+				2244969922B94DD500C76338 /* Background.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2244968A22B944DA00C76338 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2244968B22B944DA00C76338 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2244968F22B944DB00C76338 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2244969022B944DB00C76338 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2244969322B944DB00C76338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2244969422B944DB00C76338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2244969622B944DB00C76338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J263FHT7P8;
+				INFOPLIST_FILE = FlyWar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tvisoftware.FlyWar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2244969722B944DB00C76338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J263FHT7P8;
+				INFOPLIST_FILE = FlyWar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tvisoftware.FlyWar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2244967822B944DA00C76338 /* Build configuration list for PBXProject "FlyWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2244969322B944DB00C76338 /* Debug */,
+				2244969422B944DB00C76338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2244969522B944DB00C76338 /* Build configuration list for PBXNativeTarget "FlyWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2244969622B944DB00C76338 /* Debug */,
+				2244969722B944DB00C76338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2244967522B944DA00C76338 /* Project object */;
+}
